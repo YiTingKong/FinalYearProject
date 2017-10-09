@@ -1,11 +1,11 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminForgotPassworsP2.aspx.vb" Inherits="FinalYearProject2017.AdminForgotPassworsP2" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminForgotPasswordP2.aspx.vb" Inherits="FYP.AdminForgotPasswordP2" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style type="text/css">
+<style type="text/css">
         .home-style{            
             background-image: url(image/login_background.jpg);
             background-size: cover;            

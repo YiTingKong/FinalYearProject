@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AdminHome
+Partial Public Class AdminLoginPage
     
     '''<summary>
     '''form1 control.
