@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AdminHome1
+Partial Public Class AdminForgotPassword
     
     '''<summary>
     '''form1 control.
@@ -59,22 +59,22 @@ Partial Public Class AdminHome1
     Protected WithEvents txtUName As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''lblPassword control.
+    '''lblICNum control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblPassword As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblICNum As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtpassword control.
+    '''txtICNum control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtpassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtICNum As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''btnSignIn control.

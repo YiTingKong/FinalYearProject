@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AdminHome1
+Partial Public Class AdminChangePassword
     
     '''<summary>
     '''form1 control.
@@ -50,13 +50,13 @@ Partial Public Class AdminHome1
     Protected WithEvents lblUserName As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtUName control.
+    '''txtOPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtUName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtOPassword As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''lblPassword control.
@@ -68,13 +68,31 @@ Partial Public Class AdminHome1
     Protected WithEvents lblPassword As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtpassword control.
+    '''txtNPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtpassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNPassword As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Label4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtCPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtCPassword As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''btnSignIn control.

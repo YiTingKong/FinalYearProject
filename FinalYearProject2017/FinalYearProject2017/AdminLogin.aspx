@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminHome.aspx.vb" Inherits="FinalYearProject2017.AdminHome1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminLogin.aspx.vb" Inherits="FinalYearProject2017.AdminHome" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .home-style{            
+        .home-style{
             background-image: url(image/login_background.jpg);
             background-size: cover;            
         }
@@ -22,7 +22,7 @@
 </head>
 <body class="home-style">
     <form id="form1" runat="server">
-    
+        
         <%--Logo--%>
         <div style="margin-top:150px; margin-left:480px">  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,9 +33,9 @@
         <%--Header--%>
     <div style=" margin-top: 10px; margin-left: 490px; height: 191px; width: 365px;" class="logo-style">
         <div style="margin-left: 20px">
-        <asp:Label ID="Label2" runat="server" ForeColor="#669900" Font-Bold="True" Font-Size="XX-Large" Text="Trendary"></asp:Label>
+        <asp:Label ID="Label1" runat="server" ForeColor="#669900" Font-Bold="True" Font-Size="XX-Large" Text="Trendary"></asp:Label>
         &nbsp;  
-        <asp:Label ID="Label3" runat="server" Font-Bold="true" Font-Size="XX-Large"  Text="Admin Home"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Font-Bold="true" Font-Size="XX-Large"  Text="Admin Login"></asp:Label>
         </div>
         <br />
 
@@ -53,7 +53,6 @@
             <asp:ImageButton ID="btnSignIn" runat="server" src="image/button_sign-in.png"/>
         </div>
     </div>
-    
     </form>
 </body>
 </html>

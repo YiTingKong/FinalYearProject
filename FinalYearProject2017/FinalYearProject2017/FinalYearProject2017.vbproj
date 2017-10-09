@@ -120,7 +120,11 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminChangePassword.aspx" />
+    <Content Include="AdminForgotPassword.aspx" />
+    <Content Include="AdminForgotPassworsP2.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="AdminLogin.aspx" />
     <Content Include="image\button_sign-in.png" />
     <Content Include="image\FYP logo.png" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
@@ -128,11 +132,39 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminChangePassword.aspx.designer.vb">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChangePassword.aspx.vb">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdminForgotPassword.aspx.designer.vb">
+      <DependentUpon>AdminForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForgotPassword.aspx.vb">
+      <DependentUpon>AdminForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdminForgotPassworsP2.aspx.designer.vb">
+      <DependentUpon>AdminForgotPassworsP2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForgotPassworsP2.aspx.vb">
+      <DependentUpon>AdminForgotPassworsP2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="AdminHome.aspx.designer.vb">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminHome.aspx.vb">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.vb">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.vb">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminHome.aspx.vb" Inherits="FinalYearProject2017.AdminHome1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminForgotPassworsP2.aspx.vb" Inherits="FinalYearProject2017.AdminForgotPassworsP2" %>
 
 <!DOCTYPE html>
 
@@ -31,25 +31,26 @@
         </div>
 
         <%--Header--%>
-    <div style=" margin-top: 10px; margin-left: 490px; height: 191px; width: 365px;" class="logo-style">
+    <div style=" margin-top: 5px; margin-left: 410px; height: 191px; width: 511px;" class="logo-style">
         <div style="margin-left: 20px">
         <asp:Label ID="Label2" runat="server" ForeColor="#669900" Font-Bold="True" Font-Size="XX-Large" Text="Trendary"></asp:Label>
         &nbsp;  
-        <asp:Label ID="Label3" runat="server" Font-Bold="true" Font-Size="XX-Large"  Text="Admin Home"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="XX-Large"  Text="Admin Forgot Password"></asp:Label>
         </div>
         <br />
 
         <%--Contain--%>
-        <div style="margin-left: 70px; width: 241px;">
-        <asp:Label ID="lblUserName" runat="server" Text="Username : "></asp:Label>
-        <asp:TextBox ID="txtUName" runat="server" Width="140px"></asp:TextBox>
+        <div style="margin-left: 120px; width: 291px;">
+        <asp:Label ID="lblNPassword" runat="server" Text="New Password : " AccessKey="N" AssociatedControlID="txtNPassword"></asp:Label>
+        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtNPassword" runat="server" Width="140px"></asp:TextBox>
             <br />
         <br />
-        <asp:Label ID="lblPassword" runat="server" Text="Password   : "></asp:Label>
-        &nbsp;<asp:TextBox ID="txtpassword" runat="server" Width="140px" TextMode="Password"></asp:TextBox>
+        <asp:Label ID="lblCPassword" runat="server" Text="Confirm Password   : " AccessKey="C" AssociatedControlID="txtCPassword"></asp:Label>
+        &nbsp;<asp:TextBox ID="txtCPassword" runat="server" Width="140px" TextMode="Password"></asp:TextBox>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:ImageButton ID="btnSignIn" runat="server" src="image/button_sign-in.png"/>
         </div>
     </div>
