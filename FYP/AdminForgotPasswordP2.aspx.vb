@@ -5,4 +5,7 @@
 
     End Sub
 
+    Protected Sub btnSignIn_Click(sender As Object, e As ImageClickEventArgs) Handles btnSignIn.Click
+
+    End Sub
 End Class
