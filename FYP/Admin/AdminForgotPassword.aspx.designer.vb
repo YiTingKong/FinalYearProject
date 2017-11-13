@@ -41,13 +41,13 @@ Partial Public Class AdminForgotPassword
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lblUserName control.
+    '''lblUName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblUserName As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblUName As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''txtUName control.
@@ -59,29 +59,47 @@ Partial Public Class AdminForgotPassword
     Protected WithEvents txtUName As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''lblICNum control.
+    '''lblSecQuestion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblICNum As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblSecQuestion As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtICNum control.
+    '''ddlSecQuestion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtICNum As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlSecQuestion As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnSignIn control.
+    '''lblSecAns control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSignIn As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents lblSecAns As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtSecAns control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtSecAns As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''btnSubmit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSubmit As Global.System.Web.UI.WebControls.ImageButton
 End Class

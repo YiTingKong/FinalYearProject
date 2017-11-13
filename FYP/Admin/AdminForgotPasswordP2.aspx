@@ -7,7 +7,7 @@
     <title></title>
 <style type="text/css">
         .home-style{            
-            background-image: url(image/login_background.jpg);
+            background-image: url(../image/login_background.jpg);
             background-size: cover;            
         }
         .logo-style{
@@ -27,11 +27,11 @@
         <div style="margin-top:150px; margin-left:480px">  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img alt="logo" class="label-style1" src="image/FYP%20logo.png" /><br />
+        <img alt="logo" class="label-style1" src="../image/FYP%20logo.png" /><br />
         </div>
 
         <%--Header--%>
-    <div style=" margin-top: 5px; margin-left: 410px; height: 191px; width: 511px;" class="logo-style">
+    <div style=" margin-top: 5px; margin-left: 410px; width: 511px;" class="logo-style">
         <div style="margin-left: 20px">
         <asp:Label ID="Label2" runat="server" ForeColor="#669900" Font-Bold="True" Font-Size="XX-Large" Text="Trendary"></asp:Label>
         &nbsp;  
@@ -43,7 +43,7 @@
         <div style="margin-left: 120px; width: 291px;">
         <asp:Label ID="lblNPassword" runat="server" Text="New Password : " AccessKey="N" AssociatedControlID="txtNPassword"></asp:Label>
         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtNPassword" runat="server" Width="140px"></asp:TextBox>
+        <asp:TextBox ID="txtNPassword" runat="server" Width="140px" TextMode="Password"></asp:TextBox>
             <br />
         <br />
         <asp:Label ID="lblCPassword" runat="server" Text="Confirm Password   : " AccessKey="C" AssociatedControlID="txtCPassword"></asp:Label>
@@ -51,7 +51,7 @@
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:ImageButton ID="btnSignIn" runat="server" src="image/button_sign-in.png"/>
+            <asp:ImageButton ID="btnSubmit" runat="server" src="../image/button_submit.png"/>
         </div>
     </div>
     

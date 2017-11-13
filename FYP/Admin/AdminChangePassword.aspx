@@ -7,7 +7,7 @@
     <title></title>
 <style type="text/css">
         .home-style{            
-            background-image: url(image/login_background.jpg);
+            background-image: url(../image/login_background.jpg);
             background-size: cover;            
         }
         .logo-style{
@@ -27,7 +27,7 @@
         <div style="margin-top:110px; margin-left:480px">  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img alt="logo" class="label-style1" src="image/FYP%20logo.png" /><br />
+        <img alt="logo" class="label-style1" src="../image/FYP%20logo.png" /><br />
         </div>
 
         <%--Header--%>
@@ -56,7 +56,7 @@
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:ImageButton ID="btnSignIn" runat="server" src="image/button_change-password.png"/>
+            <asp:ImageButton ID="btnSignIn" runat="server" src="../image/button_change-password.png"/>
         </div>
     </div>
     </form>

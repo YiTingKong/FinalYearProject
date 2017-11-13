@@ -11,23 +11,32 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class home
+Partial Public Class AdminViewClothes
     
     '''<summary>
-    '''form1 control.
+    '''tvProducts control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents tvProducts As Global.System.Web.UI.WebControls.TreeView
     
     '''<summary>
-    '''Button1 control.
+    '''lblTitle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblTitle As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''gvClothes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gvClothes As Global.System.Web.UI.WebControls.GridView
 End Class

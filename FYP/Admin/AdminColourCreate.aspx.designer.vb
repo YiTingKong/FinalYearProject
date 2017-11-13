@@ -11,77 +11,95 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AdminForgotPasswordP2
+Partial Public Class AdminColourCreate
     
     '''<summary>
-    '''form1 control.
+    '''tvProducts control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents tvProducts As Global.System.Web.UI.WebControls.TreeView
     
     '''<summary>
-    '''Label2 control.
+    '''lblTitle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblTitle As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label3 control.
+    '''lblColour control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblColour As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lblNPassword control.
+    '''txtColour control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblNPassword As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtColour As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''txtNPassword control.
+    '''lblCBtn control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtNPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblCBtn As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lblCPassword control.
+    '''fuCImg control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblCPassword As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents fuCImg As Global.System.Web.UI.WebControls.FileUpload
     
     '''<summary>
-    '''txtCPassword control.
+    '''lblStatus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblStatus As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''btnSignIn control.
+    '''ddlStatus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSignIn As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents ddlStatus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''btnCreate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCreate As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''btnReset control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnReset As Global.System.Web.UI.WebControls.Button
 End Class

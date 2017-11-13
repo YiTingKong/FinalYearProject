@@ -7,7 +7,7 @@
     <title></title>
 <style type="text/css">
         .home-style{
-            background-image: url(image/login_background.jpg);
+            background-image: url(../image/login_background.jpg);
             background-size: cover;            
         }
         .logo-style{
@@ -25,14 +25,14 @@
     <form id="form1" runat="server">
         
         <%--Logo--%>
-        <div style="margin-top:130px; margin-left:480px">  
+        <div style="margin-top:110px; margin-left:480px">  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img alt="logo" class="label-style1" src="image/FYP%20logo.png" /><br />
+        <img alt="logo" class="label-style1" src="../image/FYP logo.png" /><br />
         </div>
 
         <%--Header--%>
-    <div style=" margin-top: 10px; margin-left: 490px; height: 191px; width: 365px;" class="logo-style">
+    <div style=" margin-top: 10px; margin-left: 490px; height: 215px; width: 365px;" class="logo-style">
         <div style="margin-left: 20px">
         <asp:Label ID="Label1" runat="server" ForeColor="#669900" Font-Bold="True" Font-Size="XX-Large" Text="Trendary"></asp:Label>
         &nbsp;  
@@ -51,7 +51,10 @@
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:ImageButton ID="btnSignIn" runat="server" src="image/button_sign-in.png"/>
+            <asp:ImageButton ID="btnSignIn" runat="server" src="../image/button_sign-in.png" ImageUrl="~/image/button_sign-in.png"/>
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Small" ForeColor="#CC0000" NavigateUrl="~/Admin/AdminForgotPassword.aspx">Forgot Password?</asp:HyperLink>
         </div>
     </div>
     </form>
