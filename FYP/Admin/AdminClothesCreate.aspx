@@ -35,11 +35,6 @@
             <asp:FileUpload ID="fuCDisplay" runat="server" accept=".png,.jpg,.jpeg,.gif" />
             <br />
             <br />
-            <asp:Label ID="lblCButton" runat="server" Text="Select the images for BUTTON :"></asp:Label>
-            <br />
-            <asp:FileUpload ID="fuCButton" runat="server" accept=".png,.jpg,.jpeg,.gif"/>
-            <br />
-            <br />
             <asp:Label ID="Label3" runat="server" Text="Size : "></asp:Label>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="ddlSize" runat="server">

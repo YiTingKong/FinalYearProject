@@ -50,24 +50,6 @@ Partial Public Class AdminColourCreate
     Protected WithEvents txtColour As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''lblCBtn control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblCBtn As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''fuCImg control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents fuCImg As Global.System.Web.UI.WebControls.FileUpload
-    
-    '''<summary>
     '''lblStatus control.
     '''</summary>
     '''<remarks>

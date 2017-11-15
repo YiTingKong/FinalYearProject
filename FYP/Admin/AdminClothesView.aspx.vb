@@ -15,7 +15,7 @@ Public Class AdminViewClothes
 
     Private Sub BindGrid()
         Dim dt As DataTable = New DataTable("product")
-        Dim query As String = "SELECT clothID, colour, size, material, priceEach, clothDesign FROM Product"
+        Dim query As String = "SELECT clothID, colour, size, material, priceEach, clothDesign FROM Product WHERE status = @status"
 
         'database
         Dim connection As SqlConnection
@@ -30,6 +30,7 @@ Public Class AdminViewClothes
 
         'select product
         Dim cmd As SqlCommand = New SqlCommand(query, connection)
+        cmd.Parameters.AddWithValue("@status", "Available")
         cmd.CommandType = CommandType.Text
         cmd.Connection = connection
         Dim da As New SqlDataAdapter(cmd)

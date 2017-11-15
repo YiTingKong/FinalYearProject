@@ -32,14 +32,19 @@
                     <asp:BoundField DataField="size" HeaderText="Size" />
                     <asp:BoundField DataField="material" HeaderText="Material" />
                     <asp:BoundField DataField="priceEach" HeaderText="Price" />                    
-                    <asp:ImageField DataImageUrlField="clothDesign" ControlStyle-Width="120" ControlStyle-Height = "120" HeaderText="Cloth Preview" />
+                    <asp:ImageField DataImageUrlField="clothDesign" ControlStyle-Width="100" ControlStyle-Height = "100" HeaderText="Cloth Preview" />
+                    <asp:ButtonField ButtonType="Image" ImageUrl="~/image/button_update.png" ControlStyle-Height="15px" ControlStyle-Width="15px" Text="Update" CommandName="Update"/>
+                    <asp:ButtonField ButtonType="Image" ImageUrl="~/image/delete_button.png" ControlStyle-Height="15px" ControlStyle-Width="15px" Text="Delete" CommandName="Delete"/> 
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:ImageButton ID="UpdateButton" runat="server" ImageUrl="~/image/button_update.png" Height="20px" Width="20px" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
             <br />
             
 &nbsp;&nbsp;
-            <br />
-            <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />

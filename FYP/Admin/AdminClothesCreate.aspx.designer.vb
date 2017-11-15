@@ -50,24 +50,6 @@ Partial Public Class AdminCreateProduct
     Protected WithEvents fuCDisplay As Global.System.Web.UI.WebControls.FileUpload
     
     '''<summary>
-    '''lblCButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblCButton As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''fuCButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents fuCButton As Global.System.Web.UI.WebControls.FileUpload
-    
-    '''<summary>
     '''Label3 control.
     '''</summary>
     '''<remarks>

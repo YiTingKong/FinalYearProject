@@ -99,10 +99,6 @@ Public Class AdminCreateProduct
             err.AppendLine("- Please select Image for DISPLAY.")
         End If
 
-        If fuCButton.HasFile = False Then
-            err.AppendLine("- Please select Image for BUTTON.")
-        End If
-
         If txtPrice.Text = "" Then
             err.AppendLine("- Please enter Clothes Price.")
         End If
@@ -130,15 +126,10 @@ Public Class AdminCreateProduct
 
                 'cloth design image
                 Dim disImg As String = fuCDisplay.FileName
-                fuCDisplay.PostedFile.SaveAs(Server.MapPath("Img/" + disImg))
-                Dim disImgPath As String = "Img/" + disImg.ToString()
+                fuCDisplay.PostedFile.SaveAs(Server.MapPath("~/Img/" + disImg))
+                Dim disImgPath As String = "~/Img/" + disImg.ToString()
 
-                'cloth button image
-                Dim btnImg As String = fuCButton.FileName
-                fuCButton.PostedFile.SaveAs(Server.MapPath("Img/" + btnImg))
-                Dim btnImgPath As String = "Img/" + btnImg.ToString()
-
-                Dim query As String = "INSERT Product (clothID, colour, size, material, priceEach, clothDesign, clothButton) VALUES (@id, @colour, @size, @material, @price, @design, @button)"
+                Dim query As String = "INSERT Product (clothID, colour, size, material, priceEach, clothDesign) VALUES (@id, @colour, @size, @material, @price, @design)"
                 Dim cmd As SqlCommand = New SqlCommand(query, connection)
                 cmd.Parameters.AddWithValue("@id", nextID) 'String
                 cmd.Parameters.AddWithValue("@colour", ddlColour.SelectedValue) 'String
@@ -146,7 +137,6 @@ Public Class AdminCreateProduct
                 cmd.Parameters.AddWithValue("@material", ddlMaterial.SelectedValue) 'String
                 cmd.Parameters.AddWithValue("@price", txtPrice.Text) 'Float
                 cmd.Parameters.AddWithValue("@design", disImgPath) 'nvarchar
-                cmd.Parameters.AddWithValue("@button", btnImgPath) 'nvarchar
                 cmd.ExecuteNonQuery()
                 cmd.Dispose()
 
@@ -155,7 +145,6 @@ Public Class AdminCreateProduct
                 Me.ddlType.SelectedIndex = -1
                 Me.txtPrice.Text = ""
                 Me.fuCDisplay.Attributes.Clear()
-                Me.fuCButton.Attributes.Clear()
                 Me.ddlSize.SelectedIndex = -1
                 Me.ddlMaterial.SelectedIndex = -1
 
@@ -173,13 +162,11 @@ Public Class AdminCreateProduct
 
     Protected Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         fuCDisplay.Attributes.Clear()
-        fuCButton.Attributes.Clear()
         ddlColour.SelectedIndex = -1
         ddlType.SelectedIndex = -1
         txtPrice.Text = ""
         ddlSize.SelectedIndex = -1
         ddlMaterial.SelectedIndex = -1
     End Sub
-
 
 End Class

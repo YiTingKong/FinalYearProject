@@ -32,40 +32,43 @@
             <asp:Button ID="btnSearch" runat="server" Text="Search" />
             <br />
             <br />
-            <asp:Label ID="lblImage" runat="server" Text="Image : "></asp:Label>
-            <asp:FileUpload ID="fuImg" runat="server" />
+            <asp:Label ID="lblImage" runat="server" Text="Image : " Visible="false"></asp:Label>
+            <asp:FileUpload ID="fuImg" runat="server" Visible="false" />
             <br />
-            <asp:Image ID="imgDis" runat="server" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Image ID="imgDis" runat="server" Height="200px" Width="200px" Visible ="False"  />
             <br />
-            <asp:Label ID="lblSize" runat="server" Text="Size : "></asp:Label>
+            <asp:Label ID="lblSize" runat="server" Text="Size : " Visible="false"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="ddlSize" runat="server">
-                <asp:ListItem>S</asp:ListItem>
-                <asp:ListItem>M</asp:ListItem>
-                <asp:ListItem>L</asp:ListItem>
+            <asp:DropDownList ID="ddlSize" runat="server" Visible="false">
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="lblMaterial" runat="server" Text="Material : "></asp:Label>
-            <asp:DropDownList ID="ddlMaterial" runat="server">
-                <asp:ListItem>Cotton</asp:ListItem>
-                <asp:ListItem>Polyester</asp:ListItem>
+            <asp:Label ID="lblMaterial" runat="server" Text="Material : " Visible="false"></asp:Label>
+            <asp:DropDownList ID="ddlMaterial" runat="server" Visible="false">
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="lblColour" runat="server" Text="Colour : "></asp:Label>
+            <asp:Label ID="lblType" runat="server" Text="Type : " Visible="false"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="ddlType" runat="server" Visible="false">
+            </asp:DropDownList>
+            <br />
+            <br />
+            <asp:Label ID="lblColour" runat="server" Text="Colour : " Visible="false"></asp:Label>
 &nbsp;
-            <asp:TextBox ID="txtColour" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="ddlColour" runat="server" Visible="false">
+            </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="lblPrice" runat="server" Text="Price : "></asp:Label>
+            <asp:Label ID="lblPrice" runat="server" Text="Price : " Visible="false"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtPrice" runat="server" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="txtPrice" runat="server" TextMode="Number" Visible="false"></asp:TextBox>
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnUpdate" runat="server" Text="Update" />
-            <asp:Button ID="btnReset" runat="server" Text="Reset" />
+            <asp:Button ID="btnUpdate" runat="server" Text="Update" Visible="false"/>
+            <asp:Button ID="btnReset" runat="server" Text="Reset" Visible="false"/>
             <br />
             <br />
             <br />

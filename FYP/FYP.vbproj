@@ -135,6 +135,11 @@
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\AdminLoginPage.aspx" />
     <Content Include="Admin\AdminClothesView.aspx" />
+    <Content Include="Admin\AdminMachineCreate.aspx" />
+    <Content Include="Admin\AdminTechCreate.aspx" />
+    <Content Include="Admin\AdminTechDelete.aspx" />
+    <Content Include="Admin\AdminTechUpdate.aspx" />
+    <Content Include="Admin\AdminTechView.aspx" />
     <Content Include="App_Data\FYPdatabase.mdf" />
     <Content Include="App_Data\FYPdatabase_log.ldf">
       <DependentUpon>FYPdatabase.mdf</DependentUpon>
@@ -142,6 +147,9 @@
     <Content Include="image\button_change-password.png" />
     <Content Include="image\button_sign-in.png" />
     <Content Include="image\button_submit.png" />
+    <Content Include="image\button_update.png" />
+    <Content Include="image\button_view.png" />
+    <Content Include="image\delete_button.png" />
     <Content Include="image\FYP logo.png" />
     <Content Include="image\login_background.jpg" />
     <Content Include="image\login_background1.jpg" />
@@ -252,6 +260,41 @@
     </Compile>
     <Compile Include="Admin\AdminClothesView.aspx.vb">
       <DependentUpon>AdminClothesView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMachineCreate.aspx.designer.vb">
+      <DependentUpon>AdminMachineCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMachineCreate.aspx.vb">
+      <DependentUpon>AdminMachineCreate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminTechCreate.aspx.designer.vb">
+      <DependentUpon>AdminTechCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminTechCreate.aspx.vb">
+      <DependentUpon>AdminTechCreate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminTechDelete.aspx.designer.vb">
+      <DependentUpon>AdminTechDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminTechDelete.aspx.vb">
+      <DependentUpon>AdminTechDelete.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminTechUpdate.aspx.designer.vb">
+      <DependentUpon>AdminTechUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminTechUpdate.aspx.vb">
+      <DependentUpon>AdminTechUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminTechView.aspx.designer.vb">
+      <DependentUpon>AdminTechView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminTechView.aspx.vb">
+      <DependentUpon>AdminTechView.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />

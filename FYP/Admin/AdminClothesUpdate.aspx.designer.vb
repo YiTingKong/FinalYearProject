@@ -122,6 +122,24 @@ Partial Public Class AdminClothesUpdate
     Protected WithEvents ddlMaterial As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''lblType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblType As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''ddlType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlType As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''lblColour control.
     '''</summary>
     '''<remarks>
@@ -131,13 +149,13 @@ Partial Public Class AdminClothesUpdate
     Protected WithEvents lblColour As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtColour control.
+    '''ddlColour control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtColour As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlColour As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''lblPrice control.

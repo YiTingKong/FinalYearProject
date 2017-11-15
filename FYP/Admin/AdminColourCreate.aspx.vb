@@ -22,10 +22,6 @@ Public Class AdminColourCreate
         Dim err As New StringBuilder()
 
         'validation
-        If fuCImg.HasFile = False Then
-            err.AppendLine("- Please select Image for DISPLAY.")
-        End If
-
         If txtColour.Text = "" Then
             err.AppendLine("- Please enter Clothes Colour.")
         End If
@@ -38,15 +34,9 @@ Public Class AdminColourCreate
 
         Try
 
-            'colour button image
-            Dim disImg As String = fuCImg.FileName
-            fuCImg.PostedFile.SaveAs(Server.MapPath("Img/button/" + disImg))
-            Dim CImgPath As String = "Img/button/" + disImg.ToString()
-
-            Dim query As String = "INSERT Colour (colour, colour_button, status) VALUES (@colour, @colourButton, @status)"
+            Dim query As String = "INSERT Colour (colour, status) VALUES (@colour, @status)"
             Dim cmd As SqlCommand = New SqlCommand(query, connection)
             cmd.Parameters.AddWithValue("@colour", txtColour.Text) 'nvarchar
-            cmd.Parameters.AddWithValue("@colourButton", CImgPath) 'nvarchar
             cmd.Parameters.AddWithValue("@status", ddlStatus.SelectedValue) 'nvarchar
             cmd.ExecuteNonQuery()
             cmd.Dispose()
@@ -54,7 +44,6 @@ Public Class AdminColourCreate
             MsgBox("Record saved.", MsgBoxStyle.Information)
             txtColour.Text = ""
             ddlStatus.SelectedIndex = -1
-            fuCImg.Attributes.Clear()
 
         Catch ex As SqlException
             MsgBox(ex.Message, , "Sql Exception")
@@ -67,6 +56,5 @@ Public Class AdminColourCreate
     Protected Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         txtColour.Text = ""
         ddlStatus.SelectedIndex = -1
-        fuCImg.Attributes.Clear()
     End Sub
 End Class

@@ -34,11 +34,6 @@
             <asp:TextBox ID="txtColour" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="lblCBtn" runat="server" Text="Select the images for BUTTON : "></asp:Label>
-            <br />
-            <asp:FileUpload ID="fuCImg" runat="server" />
-            <br />
-            <br />
             <asp:Label ID="lblStatus" runat="server" Text="Status : "></asp:Label>
             <asp:DropDownList ID="ddlStatus" runat="server">
                 <asp:ListItem>Available</asp:ListItem>
